@@ -1,0 +1,114 @@
+<!-- contucts page for the website -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<script src="./node_modules/web3/dist/web3.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="somebody">
+
+    <title>OniX</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div id="navbar" class="navbar-collapse collapse pull-right">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a class="dropdown-toggle pull-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                <li><a href="site2.html">ראשי</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing" style="padding-top: 20px">
+      <div class="jumbotron text-right" dir="rtl" style="padding-top: 50px">
+<h3>מערכת ניהול שאלתות, בית חולים בלינסון</h3>
+        <div class="input-group">
+          <span class="input-group-addon">שם מטופל</span>
+          <input id="clientname" type="text" class="form-control" name="msg" placeholder="שם מטופל">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon">תז מטופל</span>
+          <input id="clientId" type="text" class="form-control" name="msg" placeholder="תז מטופל">
+        </div>
+        <div class="form-group">
+          <label for="clientcategories">בחר קטגוריות מידע רפואי</label>
+          <select class="form-control" id="clientcategories">
+          <option disabled="disabled" selected="selected">בחר....</option>
+          <option>רפואת עיניים</option>
+          <option>רפואת משפחה</option>
+          <option>אורטופדיה</option>
+          <option>רפואת שיניים</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comment">תוצאה</label>
+          <textarea class="form-control" rows="5" id="clientdata"></textarea>
+        </div>
+	<br/>
+	<button id ="btnapply" class="btn btn-primary">הפעל שאילתא</button>
+
+      <!-- FOOTER -->
+      </div>
+       <footer>
+           <p class="pull-right"><a href="#">Back to top</a></p>
+           <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- javascript for the gallery -->
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+   <script type="text/javascript" src = "GetData.js"></script> <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+  </body>
+</html>
